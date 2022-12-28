@@ -1,0 +1,29 @@
+ <html>
+<head>
+<title>shows</title>
+<body>
+</head>
+<script>
+class Father{
+showFMoney(){
+return"Father Money <br>";
+}
+}
+class Son extends Father{
+showSMoney(){
+return"Son Money <br>";
+}
+}
+
+class GrandSon extends Son{
+showGMoney(){
+return "GrandSon money";
+}
+}
+var g = new GrandSon();
+ document.write(g.showFMoney());
+ document.write(g.showSMoney());
+ document.write(g.showGMoney());
+ </script>
+ </body>
+ </html>

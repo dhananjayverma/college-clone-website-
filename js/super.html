@@ -1,0 +1,29 @@
+ <html>
+<head>
+<title>super</title>
+<body>
+</head>
+<script>
+class Father{
+constuctor(money){
+this.Fmoney = money;
+}
+showFMoney(){
+return  this.Fmoney + "Father Money <br>";
+}
+}
+class Son extends Father{
+constuctor( money){
+ super (money);
+}
+showSMoney(){
+return "Son money <br>";
+}
+}
+var s = new Son(10000);
+ document.write(s.showFMoney());
+ document.write(s.showSMoney());
+ //document.write(g.showSMoney());
+ </script>
+ </body>
+ </html> 
